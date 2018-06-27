@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>tweetreports</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="side-bar">
+        <div class="brand">
+          <div class="logo">tweetreports</div>
+        </div>
+        <div class="menu">
+          <ul class="fa-ul">
+            <li><button id="" class="button"><i class="fa-li fa fa-dashboard"></i><span>Dashboard</span></li>
+            <li><button id="stats" class="button"><i class="fa-li fa fa-line-chart"></i><span>General Stats</span></button></li>
+            <li><button id="charts" class="button"><i class="fa-li fa fa-pie-chart"></i><span>Some Charts</span></li>
+            <li><a href="#map"><button id="" class="button"><i class="fa-li fa fa-map-marker"></i><span>See on the map</span></li></a>
+          </ul>
+        </div>
+      </div>
+      <div class="container-wrapper">
+        <div class="top-bar">
+          <div class="navbar">
+            <ul class="fa-ul nav">
+              <li><i class="fa-li fa fa-info-circle fa-lg"></i></li>
+            </ul>
+              <div class="form-group">
+                <button type="submit" id="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+                <input class="form-control" type="text" placeholder="Enter a #hashtag, @username or keyword" name="q" id="q"/>
+              </div>
+          </div>
+        </div>
+        <div class="content-wrapper">
+          <div id="header" class="header">
+            <div id="pagination" class="pagination">
+              <button id='prevBtn' class="paginationBtn">&lsaquo;</button>
+              Page <span id="page"></span>
+              <button id='nextBtn' class="paginationBtn">&rsaquo;</button>
+            </div>
+          </div>
+          <div class="content" id="content">
+            <div id="tweets" class="tweets">You can launch your query</div>
+          </div>
+          <div class="footer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="map" id="map">
+      <img src="world_map2.svg" alt="">
+    </div>
+    <script src="display.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  </body>
+</html>

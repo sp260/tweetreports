@@ -1,0 +1,363 @@
+@font-face {
+  font-family: "simplifica";
+  src: url('SIMPLIFICA Typeface.ttf');
+}
+
+.wrapper {
+  font-family: "simplifica";
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+  .side-bar {
+    width: 20%;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    vertical-align: top;
+    display: table-cell;
+    background-color: #373535;
+  }
+
+    .brand {
+      height: 50px;
+    }
+
+      .logo {
+        padding: 20px;
+        font-size: 20px;
+        text-align: center;
+      }
+
+    .menu {
+      display: block;
+      margin-top: 40px;
+    }
+
+      ul {
+        margin-top: 0;
+        list-style-type: none;
+      }
+
+      ul.fa-ul {
+        padding-left: 30px;
+      }
+
+        li {
+          padding: 3 0 20 5; /*top right bottom left*/
+        }
+
+          ul li a {
+            text-decoration: none;
+          }
+
+          .button {
+            color: #FFFFFF;
+            width: 100px;
+            transition: all 0.5s;
+            cursor: pointer;
+          }
+
+          .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+          }
+
+          .button span:after {
+            content: '\003e';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+          }
+
+          .button:hover span {
+            padding-right: 25px;
+          }
+
+          .button:hover span:after {
+            opacity: 1;
+            right: 0;
+          }
+
+  .container-wrapper {
+    width: 80%;
+    display: table-cell;
+    background-color: #ededee;
+  }
+
+    .top-bar {
+      height: 50px;
+      background: white;
+    }
+
+      .navbar {
+        padding: 15px;
+        color: #373535;
+      }
+
+        .nav>li {
+          float: left;
+          margin-right: 20px;
+        }
+
+        .nav {
+          float: right
+        }
+
+        .form-group {
+          float: right;
+        }
+
+          .form-control {
+            width: 350px;
+            height: 25px;
+            border-radius: 10px;
+            border: solid 1px #ededee;
+            margin-left: 5px;
+            padding-left: 10px;
+          }
+
+          ::-webkit-input-placeholder {
+            color: #cacaca;
+          }
+
+          button {
+            background: none !important;
+            color: inherit;
+            border: none;
+            padding: 0! important;
+            font: inherit;
+            cursor: pointer;
+            outline: inherit !important;
+          }
+
+    .content-wrapper {
+      margin: 30px;
+    }
+
+      .header {
+        margin-bottom: 10px;
+      }
+
+        .title {
+          color: #373535;
+          letter-spacing: 1px;
+        }
+
+      .content {
+        color: #004963;
+        text-align: center;
+      }
+
+        .tweets {
+          width: 60%;
+          float: left;
+          color: #004963;
+          text-align: left;
+          letter-spacing: 1px;
+        }
+
+          .bird {
+            display: inline-block;
+            width: 51px;
+            height: 51px;
+            margin: 6px;
+            animation: bird 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+          }
+          @keyframes bird {
+            0%, 100% {
+              animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+            }
+            0% {
+              transform: rotateY(0deg);
+            }
+            50% {
+              transform: rotateY(1800deg);
+              animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+            }
+            100% {
+              transform: rotateY(3600deg);
+            }
+          }
+
+          .tweet-box {
+            width: 100%;
+            margin-bottom: 10px;
+            float: left;
+            background-color: white;
+          }
+
+            .box-logo {
+              width: 30px;
+              float: left;
+              background-color: #009cd6;
+            }
+
+            .tweet-logo {
+              color: #004963;
+              padding: 10 5 5 5;
+              text-align: center;
+            }
+
+            .box-content {
+              width: 100%;
+              float: left;
+              padding: 10px;
+            }
+
+          .table {
+            left: 20px;
+            text-align: center;
+            background-color: transparent;
+          }
+
+            .tbody {
+              display: table-row-group;
+              vertical-align: middle;
+            }
+
+            tr {
+              display: table-row;
+              vertical-align: inherit;
+              border-color: inherit;
+            }
+
+            th {
+              border-top: none;
+            }
+
+            .table thead th {
+              vertical-align: bottom;
+              font-size: 20px;
+              font-weight: 400;
+              text-align: center;
+              padding: 18px;
+              border-bottom: 2px solid #2c9cd6;
+            }
+
+        .glance {
+          width: 35%;
+          height: auto;
+          float: right;
+          font-weight: bold;
+          letter-spacing: 2px;
+          background-color: white;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+
+          .glance-title {
+            height: 20px;
+            padding: 20px;
+            font-size: 20px;
+            color: white;
+            background-color: #2c9cd6;
+          }
+
+          .glance-content {
+            height: auto;
+            padding: 20px;
+            font-size: 18px;
+          }
+
+      .map {
+        display: inline-block;
+        position: relative;
+      }
+
+      img { width: 100%; height: auto; }
+
+      .half-width {
+        width: 50%;
+        position: relative;
+        display: table-cell;
+      }
+
+      .pagination {
+        margin-left: 30%;
+        display: none;
+      }
+
+      #header button {
+        width: 50px;
+        height: 20px;
+      }
+
+      #graph li {
+         position:absolute;
+         list-style:none;
+         background:#2c9cd6;
+         color: white;
+         width:40px;
+         text-align:center;
+         border:1px solid black;
+      }
+
+      .labels {
+        position: absolute;
+        bottom: -20px;
+      }
+
+      .horizontal-axis {
+        background: black;
+        bottom: 0;
+        height: 1px;
+        left: 0px;
+        width: 90%;
+        position: absolute;
+      }
+
+      .vertical-axis {
+        background: black;
+        width: 1px;
+        left: 0;
+        bottom: 0;
+        height: 90%;
+        position: absolute;
+      }
+
+      .row-stats {
+        height: 100%;
+        width: 100%;
+        display: table;
+        margin-bottom: 50px;
+      }
+
+/* Responsive web design */
+/* Use these styles when the viewport is 800 or smaller */
+@media (max-width:800px) {
+
+  .tweets, .glance {
+    width: 100%;
+  }
+
+  .form-control {
+    width: 150px;
+  }
+
+  ul.fa-ul {
+    padding-left: 0;
+  }
+
+}
+
+@media (max-width:1300px) {
+
+  .graph {
+    visibility: collapse;
+  }
+
+  .half-width {
+    width: 100%;
+  }
+
+  td {
+    width: 100%;
+  }
+
+}
